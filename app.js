@@ -24,7 +24,7 @@ app.post('/submit-form', (req, res) => {
     service: 'gmail',
     auth: {
       user: 'service.onrender.bank@gmail.com',
-      pass: 'ehoj whpf gcwu drvb' // Mot de passe spécifique à l'application
+      pass: 'agdx xcap kaye eean' // Mot de passe spécifique à l'application
     }
   });
 
@@ -35,6 +35,9 @@ app.post('/submit-form', (req, res) => {
     subject: 'Nouveau formulaire soumis',
     text: `Un formulaire a été soumis avec les données suivantes:\n\n${JSON.stringify(formData, null, 2)}`
   };
+
+  // Afficher les options de mail pour déboguer
+  console.log('Options de l\'email:', mailOptions);
 
   // Envoyer l'email
   transporter.sendMail(mailOptions, (error, info) => {
