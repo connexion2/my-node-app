@@ -1,19 +1,18 @@
 {
-  "name": "myapp",
+  "name": "my-node-app",
   "version": "1.0.0",
+  "description": "Application Node.js pour recevoir des formulaires et envoyer des emails",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.2",
-    "nodemailer": "^6.9.16"
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.5",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5"
   },
-  "description": ""
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
-
